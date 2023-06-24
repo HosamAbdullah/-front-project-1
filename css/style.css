@@ -1,0 +1,1070 @@
+/* nav bar section.......................................................................... */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(52, 58, 64);
+    position: fixed;
+    z-index: 10;
+    box-sizing: content-box;
+}
+.nav-container{
+    width: 80%;
+    margin:auto;
+    padding-top: 2.5px;
+    overflow: auto;
+}
+.nav-logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color:#fff ;
+    position: relative;
+    overflow: auto;
+    float: left;
+}
+.nav-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav-items li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-items li a::after{
+  content: "";
+  background-color: white;
+  width: 0;
+  height: 2px;
+  margin-top: 3px;
+  visibility: hidden;
+  transition: .4s;
+  display: block;
+  box-sizing: border-box;
+ 
+}
+.nav-items li a:hover::after{
+visibility: visible;
+width: 100%;
+width: 50%;
+
+
+}
+.nav-items li a{
+    text-decoration: none;
+    font-family: Poppins,sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 30px;
+    
+}
+.nav-items{
+    float:right ;
+    padding: 12px;
+
+}
+
+
+
+/* overlay section........................................................................... */
+.top-image{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/top\ image2.jpg);
+    background-repeat: no-repeat;
+}
+.top-image-overlay{
+    background-color: rgb(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+}
+.top-image-title{
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'varela round' , sans-serif;
+}
+.top-image-content{
+    width: 68%;
+    /* background-color: blue; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.top-image-para{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 30px;
+  }
+
+  .top-image-btn {
+width: 150px;
+padding: 15px 0;
+border-radius: 12px;
+border: 3px white solid;
+cursor: pointer;
+font-size: 21px;
+letter-spacing: 1.5px;
+background-color: rgb(0, 0, 0,.5);
+
+}
+.top-image-btn1{
+    margin-right: 10px;
+}
+.top-image-btn a {
+    font-family: 'varela round' , sans-serif;
+    text-decoration: none;
+    font-weight: 900px;
+    color: white;
+   
+  }
+  /* welcome section ........................................................................ */
+  .welcome{
+    width: 100%;
+    background-color:#f5f5f5;
+    padding-bottom: 90px;
+
+  }
+  .welcome-container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+  }
+  .welcome-content{
+    text-align: center;
+    padding-top: 130px;
+  }
+  .welcome-head{
+    font-family: 'varela round' , sans-serif;
+    font-size: 35px;
+    color: #901b20;
+  }
+  .welcome-line{
+    width: 150px;
+    height: 5px;
+    margin: 8px auto 100px;
+    background-color: rgb(52, 58, 64);
+  }
+  .welcome-items{
+    width: 30%;
+    background-color: #fff;
+    border: .2rem solid #e9e9e9;
+    text-align: center;
+    padding: 25px 13px;
+    float: left;
+    position: relative;
+    z-index: 1;
+  
+  }
+  .welcome-items::after{
+    content: "";
+    position: absolute;
+    background-color:#333;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    transition: 1s;
+    z-index: -1;
+  }
+  .welcome-items:hover::after{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .welcome-item-head{
+    font-family: 'varela round' , sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    transition: 1s;
+  }
+  .welcome-items:hover .welcome-item-head
+  {
+    color: white;
+    transition: 1s;
+   
+  }
+  .welcome-item-para{
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-family: 'varela round' , sans-serif;
+    font-size: 17px;
+    transition: 1s;
+
+  }
+  .welcome-items:hover .welcome-item-para{
+    color: whitesmoke;
+  }
+  .welcome-item-link{
+    text-decoration: none;
+    color: #2e5266;
+    text-transform: capitalize;
+    font-size:19px ;
+    transition: 1s;
+  }
+  .welcome-items:hover .welcome-item-link{
+    color:  #6195ff;
+  }
+  .welcome-items-icon{
+    font-size: 50px;
+    color:#2e5266 ;
+    margin-bottom: 15px;
+    transition: 1s;
+  }
+  .welcome-items:hover .welcome-items-icon{
+    color:  #6195ff;
+  }
+  .welcome-items-between{
+    margin: 0% 5%;
+
+  }
+  /* professional tracks............................................................................ */
+
+
+  .track-section{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .track-head{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .track-head-title{
+    font-family: 'varela round' , sans-serif;
+    font-size: 35px;
+    color: #901b20;
+    text-transform: capitalize;
+  }
+  .track-head-line
+  {width: 150px;
+    height: 5px;
+    margin: 8px auto 0px ;
+    background-color: rgb(52, 58, 64);
+  }
+  .track-container{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 70 px;
+  }
+.track-subcontainer1{
+  overflow: auto;
+  margin-bottom: 50px;
+}
+.track-item{
+  width: 30%;
+  float: left;
+  padding: 10px;
+  position: relative;
+ 
+}
+.track-item-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: 1.5s;
+}
+.track-item:hover .track-item-overlay{
+  visibility: visible;
+  opacity: 1;
+ 
+}
+.track-item-overlay-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 3;
+  width: 80%;
+}
+.track-item-overlay-center h4{
+  color: white;
+  text-transform: capitalize;
+  font-family: 'varela round' , sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: top 1s .4s  ,opacity .5s  .4s ; 
+}
+.track-item:hover .track-item-overlay-center h4{
+  top: 0px;
+  opacity: 1;
+
+}
+.track-item-overlay-center h3{
+  color: white;
+  text-transform: capitalize;
+  font-family: 'varela round' , sans-serif;
+  margin: 10px 0 15px;
+  letter-spacing: 1px;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: top 1s .8s ,opacity .5s .8s ; 
+}
+.track-item:hover .track-item-overlay-center h3{
+  top: 0px;
+  opacity: 1;
+
+}
+
+.track-item-overlay-center a{
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  transition: top 1s  1.2s ,opacity .5s 1.2s; 
+ 
+}
+.track-item:hover .track-item-overlay-center a{
+  top: 0px;
+  opacity: 1;
+}
+.track-item img{
+  width: 100%;
+  border-radius: 6px;
+}
+.track-between{
+  margin: 0% 5%;
+}
+.track-subcontainer2{
+  overflow: auto;
+}
+/* offered intern section........................................................................ */
+.offer{
+  width: 100%;
+  background-image: url(../image/job\ fair\ background.jpg);
+
+}
+.offer-head-content{
+  text-align: center;
+}
+.offer-title{
+  font-family: 'varela round' , sans-serif;
+    font-size: 35px;
+    color:white;
+    text-transform: capitalize;
+}
+.offer-line{
+    width: 150px;
+    height: 5px;
+    margin: 8px auto 0px ;
+    background-color: white;
+
+}
+.offer-container{
+  width: 80%;
+  margin: auto;
+}
+.offer-overlay{
+    background-color: rgb(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    
+}
+.offer-subcontainer1{
+  overflow: auto;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.offer-subcontainer2{
+  overflow: auto;
+  padding-bottom: 70px;
+}
+.offer-item{
+  width: 31%;
+  float: left;
+  padding: 30px 8px 30px 70px;
+  position: relative;
+  background-color: rgba(152, 44, 49, 1);
+  z-index: 1;
+
+}
+.offer-item::after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transition: 1s;
+  z-index: -1; 
+}
+.offer-item:hover::after{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.offer-icon{
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  font-size: 40px;
+  color: white;
+  
+}
+.offer-between{
+  margin: 0 3.5%;
+}
+.offer-item-head  {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-family: 'varela round' , sans-serif;
+    color: white;
+  }
+   .offer-item-para {
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-family: 'varela round' , sans-serif;
+    font-size: 17px;
+    color: white;
+   }
+
+   /* why- section........................................................................................ */
+
+   .why-section{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 70px;
+   }
+   .why-container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+   }
+   .why-text-content{
+    width: 50%;
+    float: left;
+   }
+   .why-title-content{
+    margin-bottom: 35px;
+   }
+   .why-title{
+    font-family: 'varela round' , sans-serif;
+    font-size: 35px;
+    color: #901b20;
+    text-transform: capitalize;
+   }
+   .why-line{
+    width: 150px;
+    height: 5px;
+    margin-top: 8px  ;
+    background-color: rgb(52, 58, 64);
+   }
+   .why-para{
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-family: 'varela round' , sans-serif;
+    line-height: 30px;
+    
+   }
+   .why-icon{
+    font-size: 20px;
+    color:rgb(52, 58, 64) ;
+   }
+   .why-list-one li span{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'varela round' , sans-serif;
+   }
+   .why-list-one li{
+    margin-bottom: 10px;
+   }
+   .why-image-content{
+    width: 50%;
+    padding-left: 20px;
+    float: left;
+   }
+   .why-img{
+    width: 480px;
+    height: 425px;
+   }
+   .why-bullets{
+    text-align: center;
+   }
+   .why-bullets li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(52, 58, 64);
+    margin-right: 8px;
+    border-radius: 50%;
+    margin-top: 15px;
+
+   }
+   .why-bullets .active{
+    background-color:  red;
+   }
+   .not-active:hover{
+    background-color:  red;
+   }
+  /* number section............................................................................. */
+  .number-section{
+    width: 100%;
+    padding: 50px 0;
+  }
+  .number-back{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../image/number2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .number-back-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.6);
+    position: relative;
+  }
+  .number-container{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+  }
+  .number-item{
+    width: 22%;
+    text-align: center;
+  }
+  .number-item-left{
+    float: left;
+  }
+  .number-item-one{
+    margin-right: 4%;
+  }
+  .number-item-right{
+    float: right;
+    margin-left: 4%;
+  }
+  .number-icon{
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: white;
+  }
+   .number-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'varela round' , sans-serif;
+   }
+   .number-para{
+    font-size: 22px;
+    color: #fff;
+    font-family: 'varela round' , sans-serif;
+   }
+   /* applying-section............................................................................................................. */
+    .apply-section{
+      width: 100%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .apply-head-content{
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .apply-title{
+      font-family: 'varela round' , sans-serif;
+      font-size: 35px;
+      color: #901b20;
+      text-transform: capitalize;
+    }
+    .apply-line{
+    width: 150px;
+    height: 5px;
+    margin: 8px auto 100px;
+    background-color: rgb(52, 58, 64);
+    }
+    .apply-container{
+      width: 80%;
+      margin: auto;
+      overflow: auto;
+    }
+    .apply-item{
+      width: 30%;
+      border: 15px solid #e9e9e9;
+      float: left;
+      height: 60vh;
+      position: relative;
+      z-index: 1;
+
+    }
+    .apply-item::after{
+      content: "";
+      position: absolute;
+      background-color: rgb(0, 0, 0,.5);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      transition: 1s;
+      z-index: -1; 
+    }
+    .apply-item:hover::after{
+      width: 100%;
+      height: 100%;
+      
+    }
+    .apply-item-between{
+      margin: 0 5%;
+    }
+    .apply-item-center{
+      text-align: center;
+      margin: 15px;
+    }
+    .apply-circle{
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background-color: #2e5266;
+      margin:20px auto;
+      position: relative;
+    }
+    .apply-circle-span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: white;
+      font-family: 'varela round' , sans-serif;
+      font-size: 23px;
+    }
+      .apply-item-title{
+        text-transform: capitalize;
+      }
+      .apply-small-container{
+        padding: 0 25px;
+      }
+      .apply-para{
+        letter-spacing: 1px;
+        line-height: 22px;
+        margin: 7px 0;
+        font-family: 'varela round' , sans-serif;
+        font-size: 17px;
+        text-transform: capitalize;
+      }
+      .apply-line-separator{
+        width: 100%;
+        background-color: rgb(0, 0, 0,.3);
+        height: 1px;
+      }
+      .apply-item-center-btn{
+        margin:40px auto 30px;
+        text-align: center;
+      
+      
+      }
+      .apply-item-btn{
+        background-color: rgb(255, 255, 255,0);
+        padding: 5px 13px;
+        border-radius: 17px;
+        /* border: 3px solid rgb(46, 82, 102,.6); */
+        border: 3px solid white;
+    
+
+      }
+      .apply-item-btn a{
+        text-decoration: none;
+        font-family: 'varela round' , sans-serif;
+        color:white;
+        font-size: 18px;
+      }
+      /* review-section.............................................................................................. */
+      .review-section{
+        width: 100%;
+        padding: 50px 0px;
+
+      }
+      .review-back{
+        background-image:url(../image/review.jpg);
+        background-attachment: fixed;
+        width: 100%;
+        height: 50vh;
+        
+
+      }
+      .review-overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0,.7);
+        position: relative;
+      }
+      .review-container{
+        width: 65%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: auto;
+      }
+      .review-item1{
+        width: 45%;
+        float: left;
+      }
+      .review-item2{
+        float: right;
+        width: 45%;
+      }
+      .review-item-mix-content{
+        position: relative;
+        width: 100%;
+        padding-left: 85px;
+      }
+      .review-item-image{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        left: 2.5px;
+      }
+      .review-item-id{
+      padding-top: 23px;
+      padding-bottom: 20px;
+      padding-left: 5px;
+      }
+      .review-item-title{
+        font-family: 'varela round' , sans-serif;
+        color: white;
+        text-transform: capitalize;
+      }
+      .review-item-title2{
+        font-family: 'varela round' , sans-serif;
+        color: white;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      .review-item-para2{
+        font-family: 'varela round' , sans-serif;
+        letter-spacing: .75px;
+        color: white;
+        line-height: 20px;
+      }
+      /* team-section............................................................................................. */
+      .team-section{
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 70px;
+      }
+      .team-head-content{
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      .team-title{
+        font-family: 'varela round' , sans-serif;
+        font-size: 35px;
+        color: #901b20;
+        text-transform: capitalize;
+      }
+      .team-line{
+      width: 70px;
+      height: 5px;
+      margin: 8px auto 70px;
+      background-color: rgb(52, 58, 64);
+      }
+      .team-container{
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+      }
+      .team-item{
+        width: 30%;
+        padding: 17px 18px;
+        float: left;
+        background-color:#e9e9e9 ;
+        position: relative;
+       
+      }
+      .team-item::after{
+        content: "";
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 2s;
+      }
+      .team-item:hover::after{
+        visibility: visible;
+        opacity: .5;
+        height: 100%;
+
+      }
+
+      .team-between{
+        margin: 0 5%;
+      }
+      .team-item-overlay{
+        background-color: rgb(0, 0, 0,.4);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s;
+      
+      }
+      .team-item:hover .team-item-overlay{
+        visibility: visible;
+        opacity: 1;
+
+      }
+      .team-item-overlay a{
+        width: 40px;
+        margin-left: auto;
+        line-height: 40px;
+        font-size: 20px;
+        display: block;
+        background-color: rgb(52, 58, 64);
+        color: white;
+        text-align: center;
+
+      }
+      
+      .team-image-container{
+        margin: auto;
+        position: relative;
+        width: 90%;
+      }
+      .team-image{
+        width: 100%;
+      }
+      .team-item-kalam{
+        text-align: center;
+        padding-top: 10px;
+      }
+      .team-item-h2{
+        font-family: 'varela round' , sans-serif;
+        text-transform: capitalize; 
+      }
+      .team-item:hover .team-item-h2{
+        color: #901b20 ;
+      }
+      .team-item-h3{
+        font-family: 'varela round' , sans-serif;
+        text-transform: capitalize;
+        font-size: 17px;
+        font-weight: 500; 
+        margin-top: 5px;
+      }
+      /* news section.......................................................................................... */
+      .news-section{
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 70px;
+        background-color:#f5f5f5;
+
+      }
+      .news-head-content{
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      .news-title{
+        font-family: 'varela round' , sans-serif;
+        font-size: 35px;
+        color: #901b20;
+        text-transform: capitalize;
+      }
+      .news-line{
+        width: 70px;
+      height: 5px;
+      margin: 8px auto 70px;
+      background-color: rgb(52, 58, 64);
+
+      }
+      .news-container{
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+      }
+      .news-item{
+        width: 30%;
+        padding: 17px 12px;
+        float: left;
+        background-color: white;
+        position: relative;
+      }
+      .news-item::after{
+        content: "";
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 2s;
+
+      }
+      .news-item:hover::after{
+        visibility: visible;
+        opacity: .5;
+        height: 100%;
+        z-index: 3;
+
+      }
+      .news-between{
+        margin: 0 5%;
+      }
+      .news-image{
+        margin: auto;
+        margin-bottom: 15px;
+      }
+      .news-info ul{
+        list-style: none;
+        margin-bottom: 15px;
+      }
+      .news-info ul li {
+        display: inline-block;
+        margin-right: 25px;
+        font-size: 14px;
+       
+      }
+      .news-icon{
+        color:#6195ff ;
+        margin-right: 4px;
+      }
+      .news-info h3{
+        font-family: 'varela round' , sans-serif;
+        text-transform: capitalize; 
+        letter-spacing: 1px;
+        font-weight: 750;
+        margin-bottom: 10px;
+      }
+      .news-info p{
+        font-family: 'varela round' , sans-serif;
+        letter-spacing: .75px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .news-info a{
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size:19px ;
+        margin-bottom: 15px;
+
+      }
+      /* footer............................................................................................ */
+      .footer-section{
+        width: 100%;
+        height: 49vh;
+        background-color: rgb(52, 58, 64);;
+        position: relative;
+      }
+      .footer-center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        /* background-color: red; */
+      }
+      .footer-image-container{
+
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color:#fff ;
+        position: relative; 
+        margin: auto;
+      }
+      .footer-img{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+      }
+      .footer-ul{
+        list-style: none;
+        margin-top: 10px;
+      }
+      .footer-li{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #6195ff;
+        margin: 0 2px;
+        text-decoration: none;
+        position: relative;
+      }
+      .footer-li::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #0954ec;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: .4 s;
+      }
+      .footer-li:hover::after{
+        visibility: visible;
+        opacity: 1;
+
+
+      }
+      .footer-li a{
+        font-size: 23px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+        color: white;
+        z-index: 3;
+
+      }
+     .fotter-para{
+          color: #999;
+          margin-top: 7px;
+        }
+      
+     
+
+      
